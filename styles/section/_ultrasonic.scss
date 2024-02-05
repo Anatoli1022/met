@@ -1,0 +1,244 @@
+.ultrasonic {
+  background: rgb(27, 31, 34);
+  &_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &_row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title_middle {
+    margin: auto;
+    text-align: center;
+  }
+
+  &__wrapper {
+    margin-top: 30px;
+    border-radius: 28px;
+    background: rgb(37, 41, 44);
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__wrapper-first {
+    padding-left: 72px;
+  }
+
+  &__wrapper-second {
+    padding-top: 72px;
+  }
+
+  &__table {
+    color: white;
+    width: 270px;
+  }
+
+  &__wrapper-table {
+    display: flex;
+    column-gap: 72px;
+    justify-content: space-between;
+    margin-top: 72px;
+  }
+  &__table-title {
+    font-size: 16px;
+    color: rgb(127, 133, 137);
+    font-weight: 550;
+    line-height: 170%;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &__table-line {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(48, 54, 56);
+    &:first-child {
+      margin: 0;
+    }
+  }
+
+  &__table-text {
+    color: rgb(203, 206, 207);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 260%;
+  }
+
+  //   &__information-block {
+  //   }
+
+  &__content-title {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 700;
+    max-width: 540px;
+
+    line-height: 135%;
+  }
+
+  &__wrapper-text {
+    margin-top: -130px;
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    max-width: 290px;
+    line-height: 150%;
+    color: rgb(255, 255, 255);
+  }
+  &__features {
+    display: block;
+    margin-top: 28px;
+    color: rgb(203, 206, 207);
+    font-size: 16px;
+    font-weight: 550;
+    line-height: 180%;
+
+    &:last-child {
+      margin-top: 0;
+    }
+  }
+
+  &__link-info {
+    display: block;
+    color: rgb(255, 62, 65);
+  }
+
+  &__information-text {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 48px;
+    color: rgb(203, 206, 207);
+    line-height: 170%;
+    max-width: 485px;
+  }
+
+  &__link-shop {
+    margin-top: 148px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 550;
+    line-height: 135%;
+    color: rgb(203, 206, 207);
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(203, 206, 207);
+  }
+
+  &__image {
+    max-width: 100%;
+  }
+
+  &__image-second {
+    margin-top: -40px;
+  }
+
+  &__wrapper-blocks {
+    margin-top: 30px;
+    column-gap: 30px;
+    display: flex;
+  }
+
+  &__text-info {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 550;
+    line-height: 160%;
+  }
+
+  &__wrapper-fourth {
+    padding-top: 77px;
+    padding-right: 22px;
+  }
+  &__information-block {
+    padding-left: 72px;
+  }
+
+  &__content-title_min {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 700;
+    max-width: 540px;
+    line-height: 135%;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 48px;
+    color: rgb(203, 206, 207);
+    vertical-align: middle;
+    line-height: 170%;
+
+    max-width: 300px;
+  }
+
+  &__wrapper-content {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    padding-left: 72px;
+  }
+
+  &__image-fifth {
+    margin-right: -200px;
+    margin-bottom: -307px;
+  }
+
+  &__text-disc {
+    min-width: 360px;
+    margin-right: -150px;
+  }
+
+  &__number-guaranty {
+    font-size: 200px;
+    font-weight: 700;
+    line-height: 135%;
+    color: rgb(255, 255, 255);
+  }
+
+  &__more-info {
+    display: block;
+    max-width: 105px;
+    margin-left: auto;
+    color: rgb(203, 206, 207);
+    font-size: 16px;
+    font-weight: 550;
+    line-height: 135%;
+    text-transform: uppercase;
+    letter-spacing: 3%;
+    border-bottom: 1px solid rgb(203, 206, 207);
+    padding-bottom: 5px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -56px;
+  }
+
+  &__wrapper-fifth {
+    padding-top: 48px;
+    padding-right: 56px;
+    padding-bottom: 37px;
+  }
+
+  &__text-guaranty {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 125%;
+    max-width: 200px;
+    margin-left: 14px;
+  }
+}
