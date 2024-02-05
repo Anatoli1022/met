@@ -1,0 +1,187 @@
+.footer {
+  padding-top: 88px;
+  background: rgb(15, 18, 20);
+  @include sm-down {
+    padding-top: 56px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    @include sm-down {
+      flex-direction: column;
+    }
+  }
+
+  &__logo-wrapper {
+    @include sm-down {
+      order: -2;
+    }
+  }
+  &__list-wrapper {
+    display: flex;
+
+    @include sm-down {
+      margin-top: 32px;
+    }
+  }
+
+  &__product-container {
+    margin-left: 171px;
+
+    @include sm-down {
+      margin-left: 0;
+    }
+  }
+  &__company-container {
+    margin-left: 89px;
+    @include sm-down {
+      margin-left: 0;
+    }
+  }
+
+  &__text {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 125%;
+
+    @include sm-down {
+      font-size: 12px;
+    }
+  }
+  &__list {
+    display: flex;
+    margin-top: 32px;
+    flex-direction: column;
+    row-gap: 16px;
+
+    @include sm-down {
+      margin-top: 22px;
+    }
+  }
+
+  &__item-link {
+    color: rgb(127, 133, 137);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 125%;
+    @include sm-down {
+      font-size: 11px;
+    }
+  }
+
+  &__list-link {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    margin-top: 32px;
+
+    @include sm-down {
+      row-gap: 22px;
+      margin-top: 32px;
+    }
+  }
+
+  &__link {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 125%;
+
+    @include sm-down {
+      font-size: 12px;
+    }
+  }
+  &__block-contacts {
+    margin-left: 179px;
+    @include sm-down {
+      margin-left: 0;
+      order: -1;
+      margin-top: 40px;
+    }
+  }
+
+  &__number-link {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: 550;
+    line-height: 125%;
+    @include sm-down {
+      font-size: 20px;
+    }
+  }
+  &__info-block {
+    margin-top: 24px;
+    @include sm-down {
+      margin-top: 40px;
+    }
+  }
+
+  &__link-info {
+    padding-right: 198px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    padding-bottom: 8px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 125%;
+
+    border-bottom: 1px solid rgb(43, 48, 50);
+
+    &:last-child {
+      margin-top: 24px;
+    }
+    @include sm-down {
+      padding-right: 0;
+      font-size: 14px;
+      max-width: 352px;
+    }
+  }
+
+  &__bottom {
+    border-top: 1px solid rgb(27, 28, 28);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-top: 72px;
+    @include sm-down {
+      padding-top: 35px;
+      padding-bottom: 56px;
+      margin-top: 40px;
+    }
+  }
+
+  &__copyright-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include sm-down {
+      display: block;
+    }
+  }
+
+  &__copyright {
+    color: rgb(127, 133, 137);
+    display: inline;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 125%;
+    @include sm-down {
+      display: block;
+      font-size: 11px;
+    }
+  }
+
+  &__link-politics {
+    display: inline-block;
+    color: rgb(127, 133, 137);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 125%;
+    @include sm-down {
+      font-size: 11px;
+      margin-top: 10px;
+    }
+  }
+}

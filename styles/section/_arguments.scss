@@ -1,0 +1,239 @@
+.arguments {
+  background: rgb(27, 31, 34);
+  padding-top: 128px;
+
+  @include sm-down {
+    padding-top: 54px;
+  }
+  &__title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+
+    @include sm-down {
+      font-size: 20px;
+    }
+  }
+  &__content-wrapper {
+    margin-top: 80px;
+    justify-content: space-between;
+    display: flex;
+    column-gap: 30px;
+    @include sm-down {
+      flex-direction: column;
+      row-gap: 24px;
+      margin-top: 35px;
+    }
+  }
+
+  &__content-first {
+    padding: 80px 88px 64px 88px;
+    border-radius: 28px;
+    background: rgb(37, 41, 44);
+    max-width: 640px;
+    @include sm-down {
+      padding: 32px 24px 32px 24px;
+      border-radius: 20px;
+    }
+  }
+
+  &__content-second {
+    padding: 72px 47px 67px 47px;
+    border-radius: 28px;
+    background: rgb(37, 41, 44);
+    @include sm-down {
+      padding: 32px 24px 32px 24px;
+      border-radius: 20px;
+    }
+  }
+
+  &__wrapper {
+    height: 134px;
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+    @include sm-down {
+      column-gap: 11px;
+      height: 70px;
+    }
+  }
+
+  &__number {
+    color: rgb(255, 255, 255);
+    font-size: 192px;
+    font-weight: 700;
+    @include sm-down {
+      font-size: 98px;
+    }
+  }
+
+  &__text {
+    align-self: end;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    max-width: 150px;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 135%;
+    @include sm-down {
+      font-size: 20px;
+      max-width: 88px;
+    }
+  }
+
+  &__information-text {
+    color: rgb(203, 206, 207);
+    max-width: 454px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 170%;
+    margin-top: 64px;
+    @include sm-down {
+      font-size: 12px;
+      margin-top: 20px;
+      max-width: 310px;
+    }
+  }
+
+  &__wrapper-links {
+    margin-top: 80px;
+    max-width: 454px;
+    display: flex;
+    row-gap: 16px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include sm-down {
+      margin-top: 22px;
+      max-width: 310px;
+
+      row-gap: 10px;
+    }
+  }
+
+  &__link {
+    border: 1px solid rgb(78, 80, 81);
+    border-radius: 66px;
+    &:first-child {
+      padding: 12px 40px;
+    }
+
+    &:nth-of-type(2) {
+      padding: 12px 60px;
+    }
+
+    &:last-child {
+      padding: 12px 177px;
+    }
+    @include sm-down {
+      border-radius: 41.6px;
+      &:first-child {
+        padding: 10px 15px;
+      }
+      &:nth-of-type(2) {
+        padding: 10px 33px;
+      }
+      &:last-child {
+        padding: 10px 113px;
+      }
+    }
+  }
+
+  &__link-image {
+    vertical-align: middle;
+  }
+
+  &__link-text {
+    color: rgb(255, 255, 255);
+    @include sm-down {
+      font-size: 12px;
+    }
+  }
+
+  &__title-block {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: 550;
+    line-height: 135%;
+    text-align: center;
+    @include sm-down {
+      font-size: 18px;
+    }
+  }
+
+  &__images-wrapper {
+    max-width: 550px;
+    display: flex;
+    margin-top: 58px;
+    flex-wrap: wrap;
+    row-gap: 38px;
+    column-gap: 13px;
+    @include sm-down {
+      row-gap: 18px;
+    }
+  }
+
+  &__link-clients {
+    display: block;
+    max-width: 92px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 47px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 550;
+    color: rgb(203, 206, 207);
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(203, 206, 207);
+    @include sm-down {
+      font-size: 12px;
+      padding-bottom: 5px;
+    }
+  }
+
+  &__social-list {
+    display: flex;
+    column-gap: 30px;
+    margin-top: 30px;
+
+    @include sm-down {
+      flex-direction: column;
+      margin-top: 24px;
+      row-gap: 16px;
+    }
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 36px 22px 36px 32px;
+    column-gap: 142px;
+    border-radius: 28px;
+    background: rgb(37, 41, 44);
+    &:first-child {
+      background: rgb(37, 156, 216);
+    }
+    @include sm-down {
+      padding: 29px 28px;
+      column-gap: 73px;
+    }
+  }
+
+  &__item-text {
+    color: rgb(203, 206, 207);
+    font-size: 16px;
+    font-weight: 550;
+  }
+
+  &__item-link {
+    display: inline-block;
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: 550;
+    color: rgb(203, 206, 207);
+    @include sm-down {
+      font-size: 18px;
+    }
+  }
+}
