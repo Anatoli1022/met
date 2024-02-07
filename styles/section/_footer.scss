@@ -1,6 +1,7 @@
 .footer {
   padding-top: 88px;
   background: rgb(15, 18, 20);
+
   @include sm-down {
     padding-top: 56px;
   }

@@ -1,9 +1,10 @@
 .arguments {
   background: rgb(27, 31, 34);
   padding-top: 128px;
-
+  padding-bottom: 104px;
   @include sm-down {
     padding-top: 54px;
+    padding-bottom: 64px;
   }
   &__title {
     text-align: center;
@@ -43,7 +44,7 @@
     border-radius: 28px;
     background: rgb(37, 41, 44);
     @include sm-down {
-      padding: 32px 24px 32px 24px;
+      padding: 32px 0;
       border-radius: 20px;
     }
   }
@@ -170,6 +171,19 @@
     column-gap: 13px;
     @include sm-down {
       row-gap: 18px;
+      margin-top: 22px;
+    }
+  }
+
+  &__mobile-none {
+    @include sm-down {
+      display: none;
+    }
+  }
+
+  &__mobile-show {
+    @include sm-down {
+      display: inline;
     }
   }
 

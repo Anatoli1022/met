@@ -1,20 +1,33 @@
 .ultrasonic {
   background: rgb(27, 31, 34);
+  padding-top: 100px;
   &_row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include sm-down {
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   &_row-center {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include sm-down {
+      flex-direction: column;
+    }
   }
 
   .title_middle {
     margin: auto;
     text-align: center;
+
+    @include sm-down {
+      text-align: left;
+    }
   }
 
   &__wrapper {
@@ -25,10 +38,19 @@
     &:first-child {
       margin-top: 0;
     }
+
+    @include sm-down {
+      margin-top: 24px;
+    }
   }
 
   &__wrapper-first {
     padding-left: 72px;
+
+    @include sm-down {
+      padding-left: 0;
+      padding-bottom: 32px;
+    }
   }
 
   &__wrapper-second {
@@ -45,6 +67,14 @@
     column-gap: 72px;
     justify-content: space-between;
     margin-top: 72px;
+
+    @include sm-down {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+      row-gap: 32px;
+    }
   }
   &__table-title {
     font-size: 16px;
@@ -53,6 +83,10 @@
     line-height: 170%;
     text-align: left;
     text-transform: uppercase;
+
+    @include sm-down {
+      font-size: 12px;
+    }
   }
 
   &__table-line {
@@ -70,22 +104,31 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 260%;
+    @include sm-down {
+      font-size: 12px;
+    }
   }
-
-  //   &__information-block {
-  //   }
 
   &__content-title {
     color: rgb(255, 255, 255);
     font-size: 40px;
     font-weight: 700;
     max-width: 540px;
-
     line-height: 135%;
+
+    @include sm-down {
+      font-size: 20px;
+      max-width: 288px;
+    }
   }
 
   &__wrapper-text {
     margin-top: -130px;
+    @include sm-down {
+      margin-top: 40px;
+      order: -2;
+      width: 290px;
+    }
   }
 
   &__subtitle {
@@ -94,6 +137,10 @@
     max-width: 290px;
     line-height: 150%;
     color: rgb(255, 255, 255);
+
+    @include sm-down {
+      font-size: 16px;
+    }
   }
   &__features {
     display: block;
@@ -106,11 +153,32 @@
     &:last-child {
       margin-top: 0;
     }
+
+    @include sm-down {
+      margin-top: 16px;
+    }
   }
 
   &__link-info {
     display: block;
     color: rgb(255, 62, 65);
+    border-bottom: 1px solid rgb(255, 62, 65);
+    margin-top: 32px;
+    max-width: 85px;
+    @include sm-down {
+      margin-top: 21px;
+      font-size: 12px;
+      max-width: 65px;
+    }
+  }
+
+  &__information-wrapper {
+    @include sm-down {
+      margin-top: 30px;
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-bottom: 40px;
+    }
   }
 
   &__information-text {
@@ -120,6 +188,10 @@
     color: rgb(203, 206, 207);
     line-height: 170%;
     max-width: 485px;
+    @include sm-down {
+      font-size: 12px;
+      margin-top: 24px;
+    }
   }
 
   &__link-shop {
@@ -132,20 +204,54 @@
     color: rgb(203, 206, 207);
     padding-bottom: 10px;
     border-bottom: 2px solid rgb(203, 206, 207);
+    @include sm-down {
+      margin-top: 24px;
+      font-size: 12px;
+    }
   }
 
   &__image {
     max-width: 100%;
   }
 
+  &__image_first {
+    @include sm-down {
+      order: -1;
+    }
+  }
+
   &__image-second {
     margin-top: -40px;
+    @include sm-down {
+      margin-top: 0;
+    }
+  }
+  &__image-fourth {
+    @include sm-down {
+      width: 100%;
+    }
+  }
+
+  &__image-fifth {
+    margin-right: -200px;
+    margin-bottom: -307px;
+
+    @include sm-down {
+      margin: 0;
+      margin-left: -100px;
+      width: 100%;
+    }
   }
 
   &__wrapper-blocks {
     margin-top: 30px;
     column-gap: 30px;
     display: flex;
+
+    @include sm-down {
+      flex-direction: column;
+      row-gap: 24px;
+    }
   }
 
   &__text-info {
@@ -158,9 +264,17 @@
   &__wrapper-fourth {
     padding-top: 77px;
     padding-right: 22px;
+
+    @include sm-down {
+      padding: 32px 0 0 0;
+    }
   }
   &__information-block {
     padding-left: 72px;
+
+    @include sm-down {
+      padding-left: 24px;
+    }
   }
 
   &__content-title_min {
@@ -169,6 +283,11 @@
     font-weight: 700;
     max-width: 540px;
     line-height: 135%;
+
+    @include sm-down {
+      font-size: 20px;
+      max-width: 300px;
+    }
   }
 
   &__text {
@@ -178,25 +297,36 @@
     color: rgb(203, 206, 207);
     vertical-align: middle;
     line-height: 170%;
-
     max-width: 300px;
+
+    @include sm-down {
+      max-width: 200px;
+      font-size: 12px;
+      margin-top: 24px;
+    }
   }
 
   &__wrapper-content {
     display: flex;
     overflow: hidden;
     align-items: center;
-    padding-left: 72px;
-  }
+    padding: 0 0 0 72px;
 
-  &__image-fifth {
-    margin-right: -200px;
-    margin-bottom: -307px;
+    @include sm-down {
+      flex-direction: column;
+      padding: 40px 24px;
+      align-items: center;
+    }
   }
 
   &__text-disc {
-    min-width: 360px;
+    width: 360px;
     margin-right: -150px;
+    @include sm-down {
+      margin: 0;
+      order: 2;
+      max-width: 310px;
+    }
   }
 
   &__number-guaranty {
@@ -204,6 +334,9 @@
     font-weight: 700;
     line-height: 135%;
     color: rgb(255, 255, 255);
+    @include sm-down {
+      font-size: 100px;
+    }
   }
 
   &__more-info {
@@ -218,6 +351,11 @@
     letter-spacing: 3%;
     border-bottom: 1px solid rgb(203, 206, 207);
     padding-bottom: 5px;
+
+    @include sm-down {
+      font-size: 12px;
+      max-width: 75px;
+    }
   }
 
   &__container {
@@ -231,6 +369,11 @@
     padding-top: 48px;
     padding-right: 56px;
     padding-bottom: 37px;
+    @include sm-down {
+      padding-top: 21px;
+      padding-right: 20px;
+      padding-bottom: 40px;
+    }
   }
 
   &__text-guaranty {
@@ -240,5 +383,11 @@
     line-height: 125%;
     max-width: 200px;
     margin-left: 14px;
+
+    @include sm-down {
+      font-size: 24px;
+      margin-left: 10px;
+      max-width: 140px;
+    }
   }
 }
